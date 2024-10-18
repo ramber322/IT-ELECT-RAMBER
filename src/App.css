@@ -2,15 +2,36 @@
   display: flex;
   justify-content: space-around;
   padding: 20px;
+  overflow-y: auto; /* Prevent vertical scroll if content overflows */
 }
+
 .main-content::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
 }
-.heder {
-  color: black;
-  text-align: left;
-  margin-left: 40px;
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  background-color:#36454F;
 }
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav a {
+  color: white;
+  margin-right: 15px; /* Add spacing between links */
+}
+
 .box-container {
   display: flex;
   flex-direction: column;
@@ -34,33 +55,21 @@
   text-align: center;
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  background-color: #2b2727;
-}
-
-.logo {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 15px;
-}
-
-.nav {
-  display: flex;
-}
-a {
-  color: white;
-}
-
 .myfooter {
   background-color: black;
   height: 50px;
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  padding: 0 20px; /* Add padding */
 }
 
 .mytext {
   color: white;
   font-size: 20px;
+}
+
+.star {
+  height: 20px;
+  width: 20px;
 }
