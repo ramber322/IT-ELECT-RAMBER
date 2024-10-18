@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css"; // Import your CSS file
+import Header from './Header'; // Use relative path with './'
+import MainContent from './MainContent'; // Use relative path with './'
+import Description from './Description'; // Use relative path with './'
+import Footer from './Footer'; // Use relative path with './'
+import Greetings from './Greetings'; // Use relative path with './'
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header/>
+      <Greetings user = "ramber"/>
+      <MainContent />
+      <Description />
+      <Footer />
     </div>
   );
 }
-
-export default App;
